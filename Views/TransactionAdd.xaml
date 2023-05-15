@@ -17,7 +17,11 @@
             TextColor="Black"
             HorizontalOptions="Center"
             Grid.Row="0"
-            Grid.Column="1"/>
+            Grid.Column="1"
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                    />
             </Grid>
         </Border>
         <Grid ColumnDefinitions="*,*" Margin="30, 0">
@@ -29,7 +33,7 @@
         <DatePicker Margin="15, 0"/>
         <Entry Placeholder="Valor" Margin="15, 0"/>
 
-        <Button Margin="15,0" Text="Salvar" HorizontalOptions="Center"/>
+        <Button Margin="15,0" Text="Salvar" HorizontalOptions="Center" Background="#DEEF75" TextColor="Black"/>
 
     </VerticalStackLayout>
 </ContentPage>
