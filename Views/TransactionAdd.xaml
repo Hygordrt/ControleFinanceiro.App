@@ -8,8 +8,8 @@
                          Spacing="16">
         <Border BackgroundColor="White"
                 Stroke="transparent"
-                Margin="15"
-                Padding="15"
+                Margin="16"
+                Padding="16"
                 StrokeShape="RoundRectangle 40">
             <Grid RowDefinitions="Auto"
                   ColumnDefinitions="*, 30">
