@@ -29,22 +29,27 @@
                 </Label>
             </Grid>
         </Border>
+        <Label TextColor="Red" IsVisible="False" x:Name="LabelError"/>
         <Grid ColumnDefinitions="*,*"
               Margin="30, 0">
             <RadioButton IsChecked="True"
+                         x:Name="RadioIcone"
                          Content="Receita" />
             <RadioButton HorizontalOptions="End"
                          Grid.Column="1"
-                         Content="Despesa" />
+                         Content="Despesa"
+                         x:Name="RadioExpense"/>
         </Grid>
 
         <Entry Placeholder="Nome"
-               Margin="15, 0" />
-        <DatePicker Margin="15, 0" />
-        <Entry Placeholder="Valor"
+               Margin="15, 0"
+               x:Name="EntryName"/>
+        <DatePicker x:Name="DatePickerDate" Margin="15, 0" />
+        <Entry x:Name="EntryVaule" Placeholder="Valor"
                Margin="15, 0" />
 
         <Button Margin="15,0"
+                Clicked="OnButtonClicked_Save" 
                 Text="Salvar"
                 HorizontalOptions="Center"
                 Background="#DEEF75"
